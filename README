@@ -1,0 +1,19 @@
+Assumptions:
+- SBT is installed and in the PATH
+- program uses located in the {project_folder}/src/main/resources  "words.txt" file with dictionary of English words. So this file must be there.
+- program tested with SBT 0.13.8 and Scala 2.12.3. Should work with Scala 2.12.0 +
+
+Requirements:
+- program uses O(number_of_words_in_dictionary) memory
+- program execution time has polynomial complexity over the input length, so for phone number of length >30 it may run for minutes
+
+How to run:
+For example you want to run the program on the phone number 27753.
+Navigate to the project folder (where build.sbt file is located). Then type
+sbt "run 27753"
+Program will run and print results in console.
+
+How to run tests:
+Navigate to the project folder (where build.sbt file is located). Then type
+sbt test
+Tests will be executed and test results printed in console.
